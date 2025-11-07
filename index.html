@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag Carini</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="app">
+        <main>
+            <h1>Tag simpatici da usare</h1>
+            <section>
+                <h2 class="section-title">Chiamare un numero</h2>
+                <!-- Posso chiamare un numero -->
+                <a target="_blank" href="tel://+39058712345">Chiamami &#9742;</a>
+            </section>
+            <section>
+                <h2 class="section-title">Mandare una mail</h2>
+                <!-- Posso mandare una mail con già soggetto e testo -->
+                <a target="_blank" href="mailto:samuelp88@gmail.com">Mandami una mail</a>
+                <a target="_blank" href="mailto:samuelp88@gmail.com?subject=Saluti">Mandami una mail con
+                    soggetto</a>
+                <a target="_blank" href="mailto:samuelp88@gmail.com?subject=Saluti&body=Ciao%20Samuel">Mandami una
+                    mail
+                    con
+                    soggetto e testo</a>
+            </section>
+            <section>
+                <h2 class="section-title">Mandare un messaggio Whatsapp</h2>
+                <!-- 
+                    Voglio scrivere un messaggio su Whatsapp con già un testo precompilato
+                    - 039 è per il prefisso italiano
+                    - Per altre informazioni https://faq.whatsapp.com/5913398998672934/?helpref=hc_fnav
+                -->
+                <a target="_blank" href="https://wa.me/039<MIO_NUMERO>?text=Oggi%20sono%20felice">Scrivimi su
+                    Whatsapp</a>
+            </section>
+            <section>
+                <h2 class="section-title">Posso scattare una foto</h2>
+                <!-- Posso chiedere di fare una foto (solo da cellulare) -->
+                <input type="file" id="selfie" name="selfie" accept="image/*" capture="user" />
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
