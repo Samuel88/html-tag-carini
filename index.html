@@ -1,105 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.10.0/axios.min.js"
-      integrity="sha512-WkZrEcQ5LMyNy6Y2PQf+Tu3vMcsmKKRKuPXtJSTHQJ3mpuvLRlA5dlDDhrrcXfyWr6Z/y3wIMfjfqVFO/gDZYQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.min.js"
-      integrity="sha512-nKXmKvJyiGQy343jatQlzDprflyB5c+tKCzGP3Uq67v+lmzfnZUi/ZT+fc6ITZfSC5HhaBKUIvr/nTLCV+7F+Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <title>Tag Carini</title>
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
 
-  <body>
-    <header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.10.0/axios.min.js"
+    integrity="sha512-WkZrEcQ5LMyNy6Y2PQf+Tu3vMcsmKKRKuPXtJSTHQJ3mpuvLRlA5dlDDhrrcXfyWr6Z/y3wIMfjfqVFO/gDZYQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.min.js"
+    integrity="sha512-nKXmKvJyiGQy343jatQlzDprflyB5c+tKCzGP3Uq67v+lmzfnZUi/ZT+fc6ITZfSC5HhaBKUIvr/nTLCV+7F+Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <title>Tag Carini</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
 
-      <h1>Header</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-        officiis earum quos quidem dolorum quisquam veniam dolores ea magni id?
-        Quaerat sint porro voluptas accusantium similique inventore odit ex
-        magni?
-      </p>
-      
+<body>
+  <header>
 
-        
-        <ul>
-            <li>
-                <a href="./index.html">Home</a>
-            </li>
-            <li>
-                <a href="./index.html">Contatti</a>
-            </li>
-        </ul>
+    <h1>Header</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+      officiis earum quos quidem dolorum quisquam veniam dolores ea magni id?
+      Quaerat sint porro voluptas accusantium similique inventore odit ex
+      magni?
+    </p>
 
-    </header>
-    <div class="app">
-      <main>
-        <h1>Tag simpatici da usare</h1>
-        <section>
-          <h2 class="section-title">Chiamare un numero</h2>
-          <!-- Posso chiamare un numero -->
-          <a target="_blank" href="tel://+39058712345">Chiamami &#9742;</a>
-        </section>
-        <section>
-          <h2 class="section-title">Mandare una mail</h2>
-          <!-- Posso mandare una mail con già soggetto e testo -->
-          <a target="_blank" href="mailto:samuelp88@gmail.com"
-            >Mandami una mail</a
-          >
-          <a target="_blank" href="mailto:samuelp88@gmail.com?subject=Saluti"
-            >Mandami una mail con soggetto</a
-          >
-          <a
-            target="_blank"
-            href="mailto:samuelp88@gmail.com?subject=Saluti&body=Ciao%20Samuel"
-            >Mandami una mail con soggetto e testo</a
-          >
-        </section>
-        <section>
-          <h2 class="section-title">Mandare un messaggio Whatsapp</h2>
-          <!-- 
+
+
+    <ul>
+      <li>
+        <a href="./index.html">Home</a>
+      </li>
+      <li>
+        <a href="./index.html">Contatti</a>
+      </li>
+    </ul>
+
+  </header>
+  <div class="app">
+    <main>
+      <h1>Tag simpatici da usare</h1>
+      <section>
+        <h2 class="section-title">Chiamare un numero</h2>
+        <!-- Posso chiamare un numero -->
+        <a target="_blank" href="tel://+39058712345">Chiamami &#9742;</a>
+      </section>
+      <section>
+        <h2 class="section-title">Mandare una mail</h2>
+        <!-- Posso mandare una mail con già soggetto e testo -->
+        <a target="_blank" href="mailto:samuelp88@gmail.com">Mandami una mail</a>
+        <a target="_blank" href="mailto:samuelp88@gmail.com?subject=Saluti">Mandami una mail con soggetto</a>
+        <a target="_blank" href="mailto:samuelp88@gmail.com?subject=Saluti&body=Ciao%20Samuel">Mandami una mail con
+          soggetto e testo</a>
+      </section>
+      <section>
+        <h2 class="section-title">Mandare un messaggio Whatsapp</h2>
+        <h3 class="section-title">Mandare un messaggio Telegram</h3>
+
+        <!-- 
                     Voglio scrivere un messaggio su Whatsapp con già un testo precompilato
                     - 039 è per il prefisso italiano
                     - Per altre informazioni https://faq.whatsapp.com/5913398998672934/?helpref=hc_fnav
                 -->
-          <a
-            target="_blank"
-            href="https://wa.me/039<MIO_NUMERO>?text=Oggi%20sono%20felice"
-            >Scrivimi su Whatsapp</a
-          >
-        </section>
-        <section>
-          <h2 class="section-title">Posso scattare una foto</h2>
-          <!-- Posso chiedere di fare una foto (solo da cellulare) -->
-          <input
-            type="file"
-            id="selfie"
-            name="selfie"
-            accept="image/*"
-            capture="user"
-          />
-        </section>
-      </main>
+        <a target="_blank" href="https://wa.me/039<MIO_NUMERO>?text=Oggi%20sono%20felice">Scrivimi su Whatsapp</a>
+      </section>
+      <section>
+        <h2 class="section-title">Posso scattare una foto</h2>
+        <!-- Posso chiedere di fare una foto (solo da cellulare) -->
+        <input type="file" id="selfie" name="selfie" accept="image/*" capture="user" />
+      </section>
+    </main>
+  </div>
+  <footer>
+    <h3>Footer</h3>
+    <div>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
     </div>
-    <footer>
-      <h3>Footer</h3>
-      <div>
-        <ul>
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
-        </ul>
-      </div>
-    </footer>
-  </body>
+  </footer>
+</body>
+
 </html>
