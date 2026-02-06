@@ -1,34 +1,41 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+    background-color: #f0f2f5;
+    min-height: 100vh;
 }
 
-.app {
-    width: 100%;
-    height: 100vh;
+.icon-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
-main {
-    background-color: lightgrey;
-    padding: 60px;
-    border-radius: 30px;
-    min-width: 50%;
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 1rem;
 }
 
-a {
-    display: block;
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.12) !important;
 }
 
-section {
-    padding: 30px 0;
+/* WhatsApp custom colors */
+.bg-whatsapp {
+    background-color: rgba(37, 211, 102, 0.1);
+    color: #25d366;
 }
 
-.section-title {
-    margin-bottom: 15px;
-    font-size: 24px;
-    color: #333;
+.btn-whatsapp {
+    background-color: #25d366;
+    border-color: #25d366;
+    color: #fff;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1ebe57;
+    border-color: #1ebe57;
+    color: #fff;
 }
